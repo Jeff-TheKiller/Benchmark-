@@ -12,15 +12,6 @@
   color: white; 
 }
 
-h3{
-  width: 14%;
-  padding-left: 1%;
-}
-
-bt{
-  border: 1px solid white;
-}
-
 .boot {width: 90%; background-color: #4CAF50;} 
 .bootS{width: 90%; background-color: green;} 
 .found {width: 80%; background-color: #2196F3;} 
