@@ -1,0 +1,33 @@
+* {box-sizing:border-box}
+
+.container {
+  width: 100%; 
+  background-color: #ddd; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 0.5px; 
+  padding-bottom: 0.5px; 
+  color: white; 
+}
+
+h3{
+  width: 14%;
+  padding-left: 1%;
+}
+
+bt{
+  border: 1px solid white;
+}
+
+.boot {width: 90%; background-color: #4CAF50;} 
+.bootS{width: 90%; background-color: green;} 
+.found {width: 80%; background-color: #2196F3;} 
+.foundS {width: 80%; background-color: blue;} 
+.mater {width: 65%; background-color: #f44336;} 
+.materS {width: 65%; background-color: brown;} 
+.seman {width: 60%; background-color: #808080;} 
+.semanS {width: 60%; background-color: black;} 
+.pure {width: 50%; background-color: darkorange;} 
+.pureS {width: 50%; background-color: gold;} 
