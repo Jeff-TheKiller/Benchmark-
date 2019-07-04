@@ -10,18 +10,21 @@
 
 .skills {
   text-align: right; 
-  padding-top: 0.5px; 
-  padding-bottom: 0.5px; 
   color: white; 
 }
 
-.boot {width: 90%; background-color: #4CAF50;} 
-.bootS{width: 90%; background-color: green;} 
-.found {width: 80%; background-color: #2196F3;} 
-.foundS {width: 80%; background-color: blue;} 
-.mater {width: 65%; background-color: #f44336;} 
-.materS {width: 65%; background-color: brown;} 
-.seman {width: 60%; background-color: #808080;} 
-.semanS {width: 60%; background-color: black;} 
-.pure {width: 50%; background-color: darkorange;} 
-.pureS {width: 50%; background-color: gold;} 
+.data{
+  padding-top: 0.5px; 
+  padding-bottom: 0.5px; 
+}
+
+.boot {background-color: #4CAF50;} 
+.bootS{background-color: green;} 
+.found {background-color: #2196F3;} 
+.foundS {background-color: blue;} 
+.mater {background-color: #f44336;} 
+.materS {background-color: brown;} 
+.seman {background-color: #808080;} 
+.semanS {background-color: black;} 
+.pure {background-color: darkorange;} 
+.pureS {background-color: gold;} 
