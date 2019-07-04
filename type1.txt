@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <meta charset="UTF-8">
-    <head>
-      <link rel="stylesheet" type="text/css" href="style.css">  
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">      
-    </head>
-    <body>
-      <div class="mx-auto">
-        <h1>Benchmark de Frameworks CSS</h1>
-      </div>
-      <div class="container-fluid">
+<div class="container-fluid">
         <div class="row mb-2 ml-1 w-1">
             <h3 >Bootstrap</h3>
             <div class="container">             
@@ -99,16 +88,3 @@
                 </div>
             </div>
         </div> 
-           
-      </div>
-      <div class="mx-auto mt-4">
-        <div class="container back">
-          <div class="row">
-            <lang class="border border dark" name="1">Fama</lang>
-            <lang class="border border dark" name="2">Destaques</lang>
-          </div>
-        </div>
-        <h3>favor clicar em um dos botões para mostrar as tabelas</h3>
-      </div>
-    </body>
-</html>
