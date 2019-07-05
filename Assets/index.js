@@ -1,51 +1,91 @@
-$(document).ready(function(){
-    console.log("test1");
-    var T = $(".data");
-    var aux = $(".data");
-    var L = $(".l").text();
-    var Y = $(".y");
-    var aux2 = $(".y");
-    var X = $(".x");
-    var a1,b1,c1,d1,e1,a2,b2,c2,d2,e2;
-    var A = $("a");
-    A.click(function(){ 
-        Restarter();
-        if(A.attr('id') == "0"){
-            a1 = 11; a2 = 6;
-            b1 = 2;  b2 = 2;
-            c1 = 1;  c2 = 1;
-            d1 = 1;  d2 = 2;
-            e1 = 0;  e2 = 1;
-            L = "250.000";
-        }
-        if(A.attr('id') == "1"){
-           a1 = 6; a2 = 0;
-           b1 = 5; b2 = 0;
-           c1 = 6; c2 = 0;
-           d1 = 6; d2 = 0;
-           e1 = 3; e2 = 0;
-           L = "12";
-        }
-        if(A.attr('id') == "2"){
-            a1 = 2; a2 = 0;
-            b1 = 2; b2 = 0;
-            c1 = 2; c2 = 0;
-            d1 = 2; d2 = 0;
-            e1 = 1; e2 = 0;
-            L = "12";
-         }
 
-        Alternator(a1,a2,b1,b2,c1,c2,d1,d2,e1,e2);
-    });
-    function Restarter(){
-        for(var i = 0; i <= 9; i++){
-            T[i].css = aux[i].css;
-            if(Y[i] == ""){X.append(aux2[i]);}}
-    }
-    function Alternator(t0,t1,t2,t3,t4,t5,t6,t7,t8,t9){
-        for(var i = 0; i <= 9; i++){
-            if(("t"+i) == 0){Y[i].remove;} 
-            else{T.attr("col-sm").val.toString().replace("col-sm-"+"t"+i);}  
+$(function() {
+    const benchmarks = {
+        'fama' : {
+            'bootstrap': {
+                'bootstrap1': {
+                    'col-sm-11' : '252.00'
+                },
+                'bootstrap2': {
+                    'col-sm-6' : '132.00'
+                }
+            },
+            'materialize': {
+                'materialize1': {'col-sm-5' : '36.00' },
+                'materialize2': {'col-sm-2' : '36.00' }
+            },
+            'foundation': {
+                'foundation1': {'col-sm-6' : '24.00'},
+                'foundation2': {'col-sm-2' : '24.00'}
+            },
+            'semantic': {
+                'semantic1': {'col-sm-6' : '12.00'},
+                'semantic2': {'col-sm-2' : '48.00'},
+            },
+            'pure': {
+                'pure1': '',
+                'pure2': {'col-sm-1' : '12.00'},
+            }, 
+        },         
+        
+        'destaques' : {
+            'bootstrap': {
+                'bootstrap1': {'col-sm-6' : '6'},
+                'bootstrap2': {'col-sm-2' : '2'},
+            },
+            'materialize': {
+                'materialize1': {'col-sm-2' : '2'},
+                'materialize2': {'col-sm-2' : '2'},
+            },
+            'foundation': {
+                'foundation1': {'col-sm-1' : '1'},
+                'foundation2': {'col-sm-1' : '1'},
+            },
+            'semantic': {
+                'semantic1': {'col-sm-1' : '1'},
+                'semantic2': {'col-sm-2' : '1'},
+            },
+            'pure': {
+                'pure1': {'col-sm-3' : '3'},
+                'pure2': {'col-sm-1' : '1'},
+            },          
         }
+    };
+    
+    function changeTableNames(n1,n2){
+        $('.t').html(n1);
+        $('.y').html(n2);
     }
+
+    function changeLimitValue(limit) {
+        $('#target-limit').html(limit);
+    }
+
+    function changeTablesAttributes(table)
+    {
+        $.each(benchmarks[table], function(i, elem) {
+            $.each(elem, function(i, elem){
+                let id = "#" + i;
+                console.log(elem);
+                console.log(i);
+                $(id).removeClass("col-sm").addClass(elem);
+                $.each(elem, function(i, elem){
+                    if($(id)!= ""){$(id).html(elem);}
+                    else $(id).html("Dados não fornecidos");
+                })
+            })
+        });
+    }
+
+
+    let $botoes = $('.btn-opcoes');
+    $botoes.click(function(){
+        let limit = $(this).data('limit');
+        let table = $(this).data('table');
+        let tag1 = $(this).data('tag');
+        let tag2 = $(this).data('tag2');
+        changeLimitValue(limit);
+        changeTablesAttributes(table);
+        changeTableNames(tag1,tag2);
+    });
 });

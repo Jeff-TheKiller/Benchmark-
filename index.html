@@ -5,8 +5,8 @@
       <link rel="stylesheet" href="./Assets/style.css">
       <link rel="stylesheet" href="./Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="./Bootstrap/bootstrap-4.3.1-dist/css/bootstrap-grid.css">
-      <script src="./Jquery/jquery-3.4.1.min.js"></script>
-      <script src="./Assets/index.js"></script>
+      <script src="./Jquery/jquery-3.4.1.min.js" defer></script>
+      <script src="./Assets/index.js" defer></script>
     </head>
     <body> 
       <div class="container-fluid">  
@@ -18,16 +18,16 @@
             <div class="col-sm-3"></div>
         </div>    
         <div class="row mb-5">
-            <h3 class="col-sm-3" >Bootstrap</h3>           
+            <h3 class="col-sm-3">Bootstrap</h3>           
             <div class="col-sm-9">
                 <h4 class="t">Usuários</h4>
                 <div class="back row">
-                  <div class="col-sm skills data boot"></div>
+                  <div id="bootstrap1" class="skills data boot col-sm"></div>
                 </div>
-                <div class="y">
-                  <h4>Estrelas</h4>
+                <div>
+                  <h4 class="y">Estrelas</h4>
                   <div class="back row">
-                    <div class="col-sm skills data bootS"></div>
+                    <div id="bootstrap2" class="skills data bootS col-sm"></div>
                   </div>
                 </div>
             </div>
@@ -38,12 +38,12 @@
             <div class="col-sm-9">
                 <h4 class="t">Usuários</h4>
                 <div class="back row">
-                  <div class="col-sm skills data mater"></div>
+                  <div id="materialize1" class="skills data mater col-sm"></div>
                 </div>
-                <div class="y">
-                  <h4>Estrelas</h4>
+                <div>
+                  <h4 class="y">Estrelas</h4>
                   <div class="back row">
-                    <div class="col-sm skills data materS"></div>
+                    <div id="materialize2" class="skills data materS col-sm"></div>
                   </div>
                 </div>
             </div>
@@ -54,12 +54,12 @@
             <div class="col-sm-9">
                 <h4 class="t">Usuários</h4>
                 <div class="back row">
-                  <div class="col-sm skills data found"></div>
+                  <div id="foundation1" class="skills data found col-sm"></div>
                 </div>
-                <div class="y">
-                  <h4>Estrelas</h4>
+                <div>
+                  <h4 class="y">Estrelas</h4>
                   <div class="back row">
-                    <div class="col-sm skills data foundS"></div>
+                    <div id="foundation2" class="skills data foundS col-sm"></div>
                   </div>
                 </div>
             </div>
@@ -70,12 +70,12 @@
             <div class="col-sm-9">
                 <h4 class="t">Usuários</h4>
                 <div class="back row">
-                  <div class="col-sm skills data seman"></div>
+                  <div id="semantic1" class="skills data seman col-sm"></div>
                 </div>
-                <div class="y">
-                  <h4>Estrelas</h4>
+                <div>
+                  <h4 class="y">Estrelas</h4>
                   <div class="back row">
-                    <div class="col-sm skills data semanS"></div>
+                    <div id="semantic2" class="skills data semanS col-sm"></div>
                   </div>
                 </div>
             </div>
@@ -86,12 +86,11 @@
             <div class="col-sm-9 x">
                 <h4 class="t">Usuários</h4>
                 <div class="back row">
-                  <div class="col-sm skills data pure"></div>
+                  <div id="pure1" class="skills data pure col-sm"></div>
                 </div>
-                  <div class="y"> 
-                    <h4>Estrelas</h4>
-                    <div class="back row">
-                      <div class="col-sm skills data pureS"></div>
+                  <div> 
+                    <h4 class="y">Estrelas</h4>
+                    <div class="pure2" class="skills data pureS col-sm"></div>
                     </div>
                   </div>
             </div>
@@ -99,13 +98,15 @@
         <div class="row mb-4"> 
           <div class="col-sm-3"></div> 
           <div class="col-sm-9 back">
-            <div class="skills l">Limit</div>
+            <div id="target-limit" class="skills l">Limit</div>
           </div>
         </div>
-        <div class="row z">       
-              <a class="btn btn-outline-dark col-sm-4" id="0"><h3>FAMA</h3></a>
-              <a class="btn btn-outline-dark col-sm-4" id="1"><h3>VANTAGENS</h3></a>
-              <a class="btn btn-outline-dark col-sm-4" id="2"><h3>DESVANTAGENS</h3></a>
+        <div class="row z">     
+             <div class="col-sm-1"></div>  
+              <button class="btn btn-outline-dark col-sm-4 btn-opcoes"data-limit="250" data-table="fama" data-tag="Usuários" data-tag2="Estrelas"><h3>FAMA</h3></button>
+              <div class="col-sm-2"></div>
+              <button class="btn btn-outline-dark col-sm-4 btn-opcoes"data-limit="12" data-table="destaques" data-tag="Vantagens" data-tag2="Desvantagens"><h3>DESTAQUES</h3></button>
+              <div class="col-sm-1"></div>
         </div>
       </div>    
     </body>
