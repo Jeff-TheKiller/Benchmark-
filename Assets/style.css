@@ -18,6 +18,10 @@
   padding-bottom: 0.5px; 
 }
 
+.l{
+  color: black;
+}
+
 .boot {background-color: #4CAF50;} 
 .bootS{background-color: green;} 
 .found {background-color: #2196F3;} 
