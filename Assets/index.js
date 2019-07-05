@@ -5,27 +5,27 @@ $(function() {
         'fama' : {
             'bootstrap': {
                 'bootstrap1': {
-                    'skills data boot col-sm-11' : '252.00'
+                    'skills data boot col-sm-12' : '264.00'
                 },
                 'bootstrap2': {
                     'skills data bootS col-sm-6' : '132.00'
                 }
             },
             'materialize': {
-                'materialize1': {'skills data mater col-sm-5' : '36.00' },
-                'materialize2': {'skills data materS col-sm-2' : '36.00' }
+                'materialize1': {'skills data mater col-sm-2' : '44.00' },
+                'materialize2': {'skills data materS col-sm-2' : '44.00' }
             },
             'foundation': {
-                'foundation1': {'skills data found col-sm-6' : '24.00'},
-                'foundation2': {'skills data foundS col-sm-2' : '24.00'}
+                'foundation1': {'skills data found col-sm-1' : '22.00'},
+                'foundation2': {'skills data foundS col-sm-2' : '22.00'}
             },
             'semantic': {
-                'semantic1': {'skills data seman col-sm-6' : '12.00'},
-                'semantic2': {'skills data semanS col-sm-2' : '48.00'},
+                'semantic1': {'skills data seman col-sm-1' : '22.00'},
+                'semantic2': {'skills data semanS col-sm-2' : '44.00'},
             },
             'pure': {
-                'pure1': {'skills data pure col-sm-3' : 'Dados não Fornecidos'},
-                'pure2': {'skills data pureS col-sm-1' : '12.00'},
+                'pure1': {'skills data pure col-sm-6' : 'Dados não Fornecidos'},
+                'pure2': {'skills data pureS col-sm-1' : '22.00'},
             }, 
         },         
         
@@ -67,8 +67,7 @@ $(function() {
             $.each(elem, function(i, elem){
                 let id = "#" + i;      
                 $.each(elem, function(i, elem){                
-                    $(id).removeClass($(id).attr('class')).addClass(i); 
-                    let b = $(id).attr('class');                  
+                    $(id).removeClass($(id).attr('class')).addClass(i);            
                     $(id).html(elem);
                 })
             })

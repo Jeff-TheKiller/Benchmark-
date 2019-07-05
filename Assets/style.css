@@ -11,6 +11,7 @@
 .skills {
   text-align: right; 
   color: white; 
+  transition: ease 2.5s;
 }
 
 .data{
