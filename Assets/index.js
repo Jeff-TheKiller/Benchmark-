@@ -27,7 +27,7 @@ $(function() {
             },
             'foundation': {
                 'foundation1': {'skills data found col-sm-1' : '22.00'},
-                'foundation2': {'skills data foundS col-sm-2' : '22.00'}
+                'foundation2': {'skills data foundS col-sm-1' : '22.00'}
             },
             'semantic': {
                 'semantic1': {'skills data seman col-sm-1' : '22.00'},
