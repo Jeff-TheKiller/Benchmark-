@@ -1,5 +1,53 @@
 
 $(function() {
+
+    const details = {
+        'fama':{
+            'Bootstrap' : {
+                'users' : 'bootstrap_usuarios',
+                'stars' : 'bootstrap_estrelas',
+            },
+            'Materialize' : {
+                'users' : 'materialize_usuarios',
+                'stars' : 'materialize_estrelas',
+            },
+            'Foundation' : {
+                'users' : 'foundation_usuarios',
+                'stars' : 'foundation_estrelas',
+            },  
+            'SemanticUI' : {
+                'users' : 'bootstrap_usuarios',
+                'stars' : 'bootstrap_estrelas',
+            },
+            'PureCSS' : {
+                'users' : 'bootstrap_usuarios',
+                'stars' : 'bootstrap_estrelas',
+            },   
+        },
+        'destaques':{
+            'Bootstrap' : {
+                'advantages' :'bootstrap_vantagens',
+                'disadvantages' : 'bootstrap_desvantagens',
+            },
+            'Materialize' : {
+                'advantages' : 'materialize_vantagens',
+                'disadvantages' : 'materialize_desvantagens',
+            },
+            'Foundation' : {
+                'advantages' : 'foundation_vantagens',
+                'disadvantages' : 'foundation_desvantagens',
+            },  
+            'SemanticUI' : {
+                'advantages' : 'semanticui_vantagens',
+                'disadvantages' : 'semanticui_desvantagens',
+            },
+            'PureCSS' : {
+                'advantages' : 'purecss_vantagens',
+                'disadvantages' : 'purecss_desvantagens',
+            },   
+        },
+    }
+
     const type = {
         'style' : {
             'btn-opcoes' : 'btn btn-outline-dark col-sm-4 btn-opcoes',

@@ -1,0 +1,2 @@
+Bootstrap é um framework muito bem documentado em sua página, no qual seus princípios de usabilidade e design seguem os princípios padrões para a construção de interfaces.
+ele possui em vantagem o reuso excessivo de código e o uso de Jumbotron e Card o fazendo único dentre os outros frameworks.
