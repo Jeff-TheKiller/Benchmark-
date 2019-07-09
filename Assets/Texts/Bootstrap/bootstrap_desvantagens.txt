@@ -1,2 +1,0 @@
-﻿Bootstrap possui como maiores desvantagens o excesso de códigos não utilizados o que os torna desnecessários para o programador, apenas servindo para pesar no código 
-e sua padronização extrema de uso fazendo a maioria dos sites que usam bootstrap serem muito iguais.

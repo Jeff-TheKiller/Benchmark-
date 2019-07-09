@@ -1,51 +1,53 @@
 
 $(function() {
-
+    $('.details').hide();
     const details = {
         'fama':{
             'Bootstrap' : {
-                'users' : 'bootstrap_usuarios',
-                'stars' : 'bootstrap_estrelas',
+                'bootstrap_t1':
+                'Bootstrap é o framework CSS mais famoso e mais utilizado do mundo devido a sua grande documentação e facilidade de aplicação, o que o torna um framework bastante amigável para iniciantes',
             },
             'Materialize' : {
-                'users' : 'materialize_usuarios',
-                'stars' : 'materialize_estrelas',
+                'materialize_t' :                  
+                '',
             },
             'Foundation' : {
-                'users' : 'foundation_usuarios',
-                'stars' : 'foundation_estrelas',
+                'foundation_t1' :                 
+                '',
             },  
             'SemanticUI' : {
-                'users' : 'bootstrap_usuarios',
-                'stars' : 'bootstrap_estrelas',
+                'semanticui_t' : 
+                '',
             },
             'PureCSS' : {
-                'users' : 'bootstrap_usuarios',
-                'stars' : 'bootstrap_estrelas',
+                'purecss_t' : 
+                '',
             },   
         },
-        'destaques':{
+        'destaques' :{
             'Bootstrap' : {
-                'advantages' :'bootstrap_vantagens',
-                'disadvantages' : 'bootstrap_desvantagens',
+                'bootstrap_t':
+                'Bootstrap é um framework muito bem documentado em sua página, no qual seus princípios de usabilidade e design seguem os princípios padrões para a construção de interfaces. Ele possui em vantagem o reuso excessivo de código e o uso de Jumbotron e Card o fazendo único dentre os outros frameworks. Em contrapartida o mesmo possui excesso de códigos não utilizados o que os torna desnecessários para o programador, apenas servindo para pesar no código e sua padronização extrema de uso fazendo a maioria dos sites que usam bootstrap serem muito iguais.',
+
             },
             'Materialize' : {
-                'advantages' : 'materialize_vantagens',
-                'disadvantages' : 'materialize_desvantagens',
+                'materialize_t' :                  
+                '',
             },
             'Foundation' : {
-                'advantages' : 'foundation_vantagens',
-                'disadvantages' : 'foundation_desvantagens',
+                'foundation_t' :
+                '', 
+
             },  
             'SemanticUI' : {
-                'advantages' : 'semanticui_vantagens',
-                'disadvantages' : 'semanticui_desvantagens',
+                'semanticui_t' : 
+                '',
             },
             'PureCSS' : {
-                'advantages' : 'purecss_vantagens',
-                'disadvantages' : 'purecss_desvantagens',
-            },   
-        },
+                'purecss_t' : 
+                '',
+            },              
+        }
     }
 
     const type = {
@@ -132,6 +134,31 @@ $(function() {
         });
     }
 
+    function HideShowText(){
+        console.log('test')
+        $.each(details[0], function(i, elem) {
+            console.log(elem);
+            /*
+            let n = 1;
+            $(elem).click(function(){             
+                if(n){
+                    $(elem.show())
+                    n = 0
+                }
+                else $(elem).hide();
+            })*/
+        })
+    }
+
+    function ChangeTextMessages(table){
+        $.each(details[table], function(i, elem) {
+            $.each(elem, function(i, elem){
+                let id = "#" + i; 
+                $(id).html(elem);
+            })
+        })    
+    }
+
     function changeSiteColors(style,stylehc){
         if($("#css").attr('href') == "./Assets/stylehc.css"){
             let a = ($('#css').attr('href'));
@@ -152,18 +179,21 @@ $(function() {
             })
         }
     }
-
+    let $titles = $('.ar');
     let $botoes = $('.btn-opcoes');
-    let $hc = $('.btn-hc')
+    let $hc = $('.btn-hc');
     $botoes.click(function(){
         let limit = $(this).data('limit');
         let table = $(this).data('table');
         let tag1 = $(this).data('tag');
         let tag2 = $(this).data('tag2');
+        let num = $(this).data('numberb');
         changeLimitValue(limit);
         changeTablesAttributes(table);
         changeTableNames(tag1,tag2);
+        ChangeTextMessages(table);
     });
+    $titles.click(HideShowText());
     $hc.click(function(){
         let style = $(this).data('style');
         let stylehc = $(this).data('stylehc');
