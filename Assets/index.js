@@ -134,20 +134,19 @@ $(function() {
         });
     }
 
-    function HideShowText(){
-        console.log('test')
-        $.each(details[0], function(i, elem) {
-            console.log(elem);
-            /*
-            let n = 1;
-            $(elem).click(function(){             
-                if(n){
-                    $(elem.show())
-                    n = 0
-                }
-                else $(elem).hide();
-            })*/
-        })
+    function HideShowText(n,table){
+        if(n == 0){
+            $.each(details, function(i, elem) {          
+                $.each(elem, function(i, elem){
+                    let id = "#" + i; 
+                    $(id).hide();
+                })
+            })
+        }
+        else if(n = 1){
+            $('#'+table).show()
+        }
+        else if()
     }
 
     function ChangeTextMessages(table){
@@ -182,6 +181,8 @@ $(function() {
     let $titles = $('.ar');
     let $botoes = $('.btn-opcoes');
     let $hc = $('.btn-hc');
+    let n = 0;
+    HideShowText(n);
     $botoes.click(function(){
         let limit = $(this).data('limit');
         let table = $(this).data('table');
@@ -193,7 +194,11 @@ $(function() {
         changeTableNames(tag1,tag2);
         ChangeTextMessages(table);
     });
-    $titles.click(HideShowText());
+    $titles.click(function(){
+        let table = $(this).data('t');
+        n = 1;
+        HideShowText(n,table);
+    });
     $hc.click(function(){
         let style = $(this).data('style');
         let stylehc = $(this).data('stylehc');
