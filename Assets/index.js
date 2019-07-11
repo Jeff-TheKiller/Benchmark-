@@ -4,24 +4,24 @@ $(function() {
     const details = {
         'fama':{
             'Bootstrap' : {
-                'bootstrap_t1':
-                'Bootstrap é o framework CSS mais famoso e mais utilizado do mundo devido a sua grande documentação e facilidade de aplicação, o que o torna um framework bastante amigável para iniciantes',
+                'bootstrap_t':
+                'Bootstrap é o framework CSS mais famoso e mais utilizado do mundo segundo o GitHub devido a sua grande documentação e facilidade de aplicação, o que o torna um framework bastante amigável para iniciantes.',
             },
             'Materialize' : {
                 'materialize_t' :                  
-                '',
+                'Materialize é segundo framework CSS mais famoso segundo o GitHub tendo várias vantegens que o destacam, mas devido a algumas desvantagens que ele possui ele fica pela sombra do bootstrap.',
             },
             'Foundation' : {
-                'foundation_t1' :                 
-                '',
+                'foundation_t' :                 
+                'Foundation é o terceiro mais famoso e usado framework CSS que assim como todos acabam ficando na sombra do Bootstrap devido as qualidades do Bootstrap.',
             },  
             'SemanticUI' : {
                 'semanticui_t' : 
-                '',
+                'Semantic UI é o quarto mais famoso e usado framework CSS do GitHub que ao se comparar com o Foundation é bastante similar em números de usuários.',
             },
             'PureCSS' : {
                 'purecss_t' : 
-                '',
+                'É o mais simples frameworks de todos os acima tendo pouquíssimos recursos em comparação ao anteriores porém ele não fica atrás por causa disso já que sua usabilidade é destinada a softwares mais simples que os demais',
             },   
         },
         'destaques' :{
@@ -32,20 +32,20 @@ $(function() {
             },
             'Materialize' : {
                 'materialize_t' :                  
-                '',
+                'Materialize é um framework bem documentado que possui uma vasta gama de componentes, respomsividade suportada em qualquer dispositivo, em contrapartida ele não possui suporte ao modelo Flex Box e possui um arquivo muito pesado para trabalho.',
             },
             'Foundation' : {
                 'foundation_t' :
-                '', 
+                'Foundation é um framework bem documentado que é construído em SASS o que permite a contrução de aplicações rapidamente, possui maior flexibilidade com todas as classes possuindo um estilo alternativo, utiliza REMs ao invés de pixel eleiminando a necessidade explícita de definir altura e largura para cada dispositivo etc. Porém el ele bastante complexo para iniciantes e possui um arquivo relativamente muito grande tendo vários recursos que normalmente não são utilizados.', 
 
             },  
             'SemanticUI' : {
                 'semanticui_t' : 
-                '',
+                'Semantic UI se destaca utilizando Jquery e LESS(pré-processador de CSS) produzindo resultados mais bonitos nas aplicações, possui uma excelente documentação, grande liberdade de customização,Carrega somente os componentes que se necesita na aplicação minimizando o tamanho do arquivo e consequentemente o tempo de carregamento da página entre outros. Por outro lado ele é bastante complexo para inciantes e não sofre mais manutenção.',
             },
             'PureCSS' : {
                 'purecss_t' : 
-                '',
+                'Pure CSS é um framework extremamente leve permitindo tempos de carregamentos reápidos até mesmo para microprocessadores, possui matrizes flexíveis de módulos CSS. Só que o mesmo contitui-se apenas de CSS não incluindo Jquery ou plug-ins do Java Script.',
             },              
         }
     }
@@ -135,7 +135,7 @@ $(function() {
     }
 
     function HideShowText(n,table){
-        if(n == 0){
+        if(n == 0 && table == null){
             $.each(details, function(i, elem) {          
                 $.each(elem, function(i, elem){
                     let id = "#" + i; 
@@ -143,10 +143,10 @@ $(function() {
                 })
             })
         }
-        else if(n = 1){
-            $('#'+table).show()
+        else if(n == 1){
+            if($('#'+table).is(":visible")){$('#'+table).hide();}               
+            else {$('#'+table).show();}         
         }
-        else if()
     }
 
     function ChangeTextMessages(table){
@@ -181,24 +181,26 @@ $(function() {
     let $titles = $('.ar');
     let $botoes = $('.btn-opcoes');
     let $hc = $('.btn-hc');
-    let n = 0;
-    HideShowText(n);
-    $botoes.click(function(){
+    $botoes.click(function(){    
         let limit = $(this).data('limit');
         let table = $(this).data('table');
         let tag1 = $(this).data('tag');
         let tag2 = $(this).data('tag2');
         let num = $(this).data('numberb');
+        t = null;
+        let n = 0;
         changeLimitValue(limit);
         changeTablesAttributes(table);
-        changeTableNames(tag1,tag2);
-        ChangeTextMessages(table);
+        changeTableNames(tag1,tag2);       
+        HideShowText(n,t);
+        ChangeTextMessages(table); 
+        $titles.click(function(){  
+            n = 1;                
+            t = $(this).data('t');
+            HideShowText(n,t);           
+        });       
     });
-    $titles.click(function(){
-        let table = $(this).data('t');
-        n = 1;
-        HideShowText(n,table);
-    });
+    
     $hc.click(function(){
         let style = $(this).data('style');
         let stylehc = $(this).data('stylehc');
