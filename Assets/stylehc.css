@@ -1,6 +1,6 @@
 * {box-sizing:border-box}
 
-.container-fluid, html{
+html,.all{
     background-color: black;
     color: white;
 }
@@ -17,8 +17,13 @@ h1,h3{
 .skills {
   text-align: right; 
   color: black; 
-  transition: ease 2.5s;
+  transition: ease 2s;
 }
+
+.ar{
+  cursor: pointer;
+}
+
 
 .data{
   padding-top: 0.5px; 

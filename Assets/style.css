@@ -12,12 +12,16 @@ h1,h3{
 .skills {
   text-align: right; 
   color: white; 
-  transition: ease 2.5s;
+  transition: ease 2s;
 }
 
 .data{
   padding-top: 0.5px; 
   padding-bottom: 0.5px; 
+}
+
+.ar{
+  cursor: pointer;
 }
 
 .l{
