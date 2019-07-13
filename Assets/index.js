@@ -1,6 +1,5 @@
 
 $(function() {
-    $('.details').hide();
     const details = {
         'fama':{
             'bootstrap_t': 'Bootstrap é o framework CSS mais famoso e mais utilizado do mundo segundo o GitHub devido a sua grande documentação e facilidade de aplicação, o que o torna um framework bastante amigável para iniciantes.',
