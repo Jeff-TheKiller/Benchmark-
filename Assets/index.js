@@ -1,5 +1,116 @@
 
 $(function() {
+    const table = {
+        'Rapidez': {
+            'bootstrap':{ 
+                'Peso':'-143 KB', 
+                'N/A' :'', 
+                'N/A' :'',
+            }, 
+            'materialize':{ 
+                'Peso':'-114 KB', 
+                'N/A' :'', 
+                'N/A' :'',
+            },
+            'foundation':{ 
+                'Peso':'-148 KB', 
+                'N/A' :'', 
+                'N/A' :'',
+            },
+            'semanticui':{ 
+                'Peso':'-1150 KB', 
+                'N/A' :'', 
+                'N/A' :'',
+            }, 
+            'purecss':{ 
+                'Peso':'-3.8 KB', 
+                'N/A' :'', 
+                'N/A' :'',
+            },       
+        },
+        'Componentes' : {
+            'bootstrap' : {
+                'Quantidade' : 'Alta',   
+                'Variações de Componentes' : 'Alta', 
+                'N/A' :'', 
+            },
+            'materialize' : {
+                'Quantidade' : 'Mediana',   
+                'Variações de Componentes' : 'Mediana', 
+                'N/A' :'', 
+            },
+            'foundation' : {
+                'Quantidade' : 'Muito alta',   
+                'Variações de Componentes' : 'Alta', 
+                'N/A' :'', 
+            },
+            'semanticui' : {
+                'Quantidade' : 'Alta',   
+                'Variações de Componentes' : 'Muito alta', 
+                'N/A' :'', 
+            },
+            'purecss' : {
+                'Quantidade' : 'Muito baixa',   
+                'Variações de Componentes' : 'Muito baixa', 
+                'N/A' :'', 
+            },
+        },
+        'Consolidação' : {
+            'bootstrap':{
+                'Contribuidores' : '1000',
+                'Versão' : '4.3.1',
+                'Lançamento' : '2011',
+            },
+            'materialize':{
+                'Contribuidores' : '253',
+                'Versão' : '1.0.0',
+                'Lançamento' : '2018',
+            },
+            'foundation':{
+                'Contribuidores' : '985',
+                'Versão' : '6.5.3',
+                'Lançamento' : '2011',
+            },
+            'semanticui':{
+                'Contribuidores' : '190',
+                'Versão' : '2.4.1',
+                'Lançamento' : '2013',
+            },
+            'purecss':{
+                'Contribuidores' : '57',
+                'Versão' : '1.0.1',
+                'Lançamento' : '2013',
+            },
+        },
+        'Comunidade' : {
+            'bootstrap':{
+                'Atividade' : 'Muito ativa',
+                'Atualizações' : '18759',
+                'Atualizações por Mês' : '40',
+            },
+            'materialize':{
+                'Atividade' : 'Ativa',
+                'Atualizações' : '3866',
+                'Atualizações por Mês' : '2',
+            },
+            'foundation':{
+                'Atividade' : 'Muito ativa',
+                'Atualizações' : '16324',
+                'Atualizações por Mês' : '5',
+            },
+            'semanticui':{
+                'Atividade' : 'Inativa',
+                'Atualizações' : '6684',
+                'Atualizações por Mês' : '0',
+            },
+            'purecss':{
+                'Atividade' : 'Pouco ativa',
+                'Atualizações' : '560',
+                'Atualizações por Mês' : '2',
+            },
+        }
+    }
+
     const details = {
         'fama':{
             'bootstrap_t': 'Bootstrap é o framework CSS mais famoso e mais utilizado do mundo segundo o GitHub devido a sua grande documentação e facilidade de aplicação, o que o torna um framework bastante amigável para iniciantes.',
