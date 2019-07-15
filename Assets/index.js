@@ -2,113 +2,150 @@
 $(function() {
     const table = {
         'Rapidez': {
-            'bootstrap':{ 
-                'Peso':'-143 KB', 
-                'N/A' :'', 
-                'N/A' :'',
-            }, 
-            'materialize':{ 
-                'Peso':'-114 KB', 
-                'N/A' :'', 
-                'N/A' :'',
+            't1':{ 
+                'Peso':{     
+                    '-143 KB' :{}, 
+                    '-114 KB' :{}, 
+                    '-148 KB' :{}, 
+                    '-1150 KB' :{}, 
+                    '-3.8 KB' :{}, 
+                }, 
             },
-            'foundation':{ 
-                'Peso':'-148 KB', 
-                'N/A' :'', 
-                'N/A' :'',
+            't2':{ 
+                'N/A':{
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                },
             },
-            'semanticui':{ 
-                'Peso':'-1150 KB', 
-                'N/A' :'', 
-                'N/A' :'',
-            }, 
-            'purecss':{ 
-                'Peso':'-3.8 KB', 
-                'N/A' :'', 
-                'N/A' :'',
-            },       
+            't3':{ 
+                'N/A':{
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                },
+            },    
         },
         'Componentes' : {
-            'bootstrap' : {
-                'Quantidade' : 'Alta',   
-                'Variações de Componentes' : 'Alta', 
-                'N/A' :'', 
+            't1':{ 
+                'Quantidade':{
+                    'Alta':{},
+                    'Mediana':{},
+                    'Alta':{},
+                    'Muito alta':{},
+                    'Muito baixa':{},
+                },
             },
-            'materialize' : {
-                'Quantidade' : 'Mediana',   
-                'Variações de Componentes' : 'Mediana', 
-                'N/A' :'', 
+            't2':{ 
+                'Variações de Componentes':{
+                    'Alta':{},
+                    'Mediana':{},
+                    'Alta':{},
+                    'Muito alta':{},
+                    'Muito baixa':{},
+                },
             },
-            'foundation' : {
-                'Quantidade' : 'Muito alta',   
-                'Variações de Componentes' : 'Alta', 
-                'N/A' :'', 
-            },
-            'semanticui' : {
-                'Quantidade' : 'Alta',   
-                'Variações de Componentes' : 'Muito alta', 
-                'N/A' :'', 
-            },
-            'purecss' : {
-                'Quantidade' : 'Muito baixa',   
-                'Variações de Componentes' : 'Muito baixa', 
-                'N/A' :'', 
-            },
+            't3':{ 
+                'N/A':{
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                },
+            },  
         },
         'Consolidação' : {
-            'bootstrap':{
-                'Contribuidores' : '1000',
-                'Versão' : '4.3.1',
-                'Lançamento' : '2011',
-            },
-            'materialize':{
-                'Contribuidores' : '253',
-                'Versão' : '1.0.0',
-                'Lançamento' : '2018',
-            },
-            'foundation':{
-                'Contribuidores' : '985',
-                'Versão' : '6.5.3',
-                'Lançamento' : '2011',
-            },
-            'semanticui':{
-                'Contribuidores' : '190',
-                'Versão' : '2.4.1',
-                'Lançamento' : '2013',
-            },
-            'purecss':{
-                'Contribuidores' : '57',
-                'Versão' : '1.0.1',
-                'Lançamento' : '2013',
-            },
+            't1':{ 
+                'Contribuidores':{
+                    '1000':{},
+                    '253':{},
+                    '985':{},
+                    '190':{},
+                    '57':{},
+                },
+            },  
+            't2':{ 
+                'Versão':{
+                    '4.3.1':{},
+                    '1.0.0':{},
+                    '6.5.3':{},
+                    '2.4.1':{},
+                    '1.0.1':{},
+                },
+            },  
+            't3':{ 
+                'Lançamento':{
+                    '2011':{},
+                    '2018':{},
+                    '2011':{},
+                    '2013':{},
+                    '2013':{},
+                },
+            },  
         },
         'Comunidade' : {
-            'bootstrap':{
-                'Atividade' : 'Muito ativa',
-                'Atualizações' : '18759',
-                'Atualizações por Mês' : '40',
+            't1':{ 
+                'Atividade':{
+                    'Muito ativa':{},
+                    'Ativa':{},
+                    'Muito ativa':{},
+                    'Inativa':{},
+                    'Pouco ativa':{},
+                },
+            },  
+            't2':{ 
+                'Atualizações':{
+                    '18759':{},
+                    '3866':{},
+                    '16324':{},
+                    '6684':{},
+                    '560':{},
+                },
+            },  
+            't3':{ 
+                'Atualizações por Mês':{
+                    '40':{},
+                    '2':{},
+                    '5':{},
+                    '0':{},
+                    '2':{},
+                },
+            },  
+        },
+        'Simplicidade' : {
+            't1' : {
+                'Comandos' : {
+                    'Excelente' : {},
+                    'Boa' : {},
+                    'Mediana' : {},
+                    'Baixa' : {},
+                    'Baixa' : {},
+                },
             },
-            'materialize':{
-                'Atividade' : 'Ativa',
-                'Atualizações' : '3866',
-                'Atualizações por Mês' : '2',
+            't2' : {
+                'Componentes' : {
+                    'Mediana' : {},
+                    'Mediana' : {},
+                    'Mediana' : {},
+                    'Mediana' : {},
+                    'Excelente' : {},
+                },
             },
-            'foundation':{
-                'Atividade' : 'Muito ativa',
-                'Atualizações' : '16324',
-                'Atualizações por Mês' : '5',
-            },
-            'semanticui':{
-                'Atividade' : 'Inativa',
-                'Atualizações' : '6684',
-                'Atualizações por Mês' : '0',
-            },
-            'purecss':{
-                'Atividade' : 'Pouco ativa',
-                'Atualizações' : '560',
-                'Atualizações por Mês' : '2',
-            },
-        }
+            't3':{ 
+                'N/A':{
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                    '':{},
+                },
+            },  
+        },
     }
 
     const details = {
@@ -190,6 +227,10 @@ $(function() {
             },          
         }
     };
+    function changeTableTexts(){
+        $
+    }
+
     function changeTableNames(n1,n2){
         $('.t').html(n1);
         $('.y').html(n2);
