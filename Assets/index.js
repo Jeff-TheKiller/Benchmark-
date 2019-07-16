@@ -29,7 +29,7 @@ $(function() {
                     'l5c3' : '',
                 },
             },
-            'subitle' : '', 
+            'subtitle' : { '-Legenda: Objetos são classificados de acordo com o peso total do arquivo de framework e quanto menor for o mesmo mais rápido será para o navegador carregar o sistema.' : {'a' : ''},},
         },
         'Componentes' : {
             'tit1' : {
@@ -59,7 +59,7 @@ $(function() {
                     'l5c3' : '',
                 },
             },
-            'subitle' : '',   
+            'subtitle' : { '-Legenda: Componentes são os elementos que existem dentro do framework que permitem alguma alteração no sistema, eles são classificados de acordo com os valores "Muito Baixo : 29 ou -";"Baixo: 30 a 39"; "Mediano: 40 a 49"; "Alto : 50 a 59"; "Muito alto: 60 a 69"; "Excelente: 70 ou +". Variações trata-se de outras opções do mesmo comando permitindo maior liberdade do sistema, ex: no Semantic UI um botão pode possuir bordas de formatos variados e cores variadas permitindo maior liberdade para o usuário.' : {'a' : ''},},
         },
         'Consolidação' : {
             'tit1':{ 
@@ -89,7 +89,7 @@ $(function() {
                     'l5c3' : '2013',
                 },
             },
-            'subitle' : '',   
+            'subtitle' : { '-Legenda: Contribuidores são aqueles que contribuem com a criação de novas versões do framework seja corrigindo problemas ou adicionando novos recursos no mesmo' : {'a' : ''},}, 
         },
         'Comunidade' : {
             'tit1':{ 
@@ -119,7 +119,7 @@ $(function() {
                     'l5c3' : '2',
                 },
             },
-            'subitle' : '',   
+            'subtitle' : { '-Legenda: Atualizações se trata de quantas novas versões do framework são criadas, elas podem variar de acordo com o tempo que estão no mercado e a ativade da sua comunidade' : {'a' : ''},},  
         },
         'Simplicidade' : {
             'tit1' : {
@@ -149,7 +149,7 @@ $(function() {
                     'l5c3' : '',
                 },
             }, 
-            'subitle' : '', 
+            'subtitle' : { '-Legenda: Simplicidade de comandos significa se eles usam poucas palavras e se destacam por serem intutitivas as suas funções, ex: No bootstrap o comando col-sm-5 faz uma coluna que terá até o tamanho de tela qualificado como "small" terá tamanho 5'   : {'a' : ''},},
         },
     };
 
