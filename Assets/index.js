@@ -4,149 +4,154 @@ $(function() {
         'Rapidez' : {
             'tit1' : {
                 'Peso' : { 
-                    'l1c1' : {'-143 KB'},
-                    'l2c1' : {'-114 KB'}, 
-                    'l3c1' : {'-148 KB'}, 
-                    'l4c1' : {'-1150 KB'}, 
-                    'l5c1' : {'-3.8 KB'},
-                }
+                    'l1c1' : '-143 KB' ,
+                    'l2c1' : '-114 KB', 
+                    'l3c1' : '-148 KB', 
+                    'l4c1' : '-1150 KB',  
+                    'l5c1' : '-3.8 KB',
+                },
             },
             'tit2' : {
                 'N/A' : {
-                    'l1c2' : {''},
-                    'l2c2' : {''},
-                    'l3c2' : {''},
-                    'l4c2' : {''},
-                    'l5c2' : {''},
-                }
+                    'l1c2' : '',
+                    'l2c2' : '',
+                    'l3c2' : '',
+                    'l4c2' : '',
+                    'l5c2' : '',
+                },
             },                                                                                                  
             'tit3': {
                 'N/A' : {
-                    'l1c3' : {''},
-                    'l2c3' : {''},
-                    'l3c3' : {''},
-                    'l4c3' : {''},
-                    'l5c3' : {''},
-                }
+                    'l1c3' : '',
+                    'l2c3' : '',
+                    'l3c3' : '',
+                    'l4c3' : '',
+                    'l5c3' : '',
+                },
             },
+            'subitle' : '', 
         },
         'Componentes' : {
             'tit1' : {
                 'Quantidade' : {
-                    'l1c1' : {'Alta'},
-                    'l2c1' : {'Mediana'},
-                    'l3c1' : {'Alta'},
-                    'l4c1' : {'Muito alta'},
-                    'l5c1' : {'Muito baixa'},
+                    'l1c1' : 'Alta',
+                    'l2c1' : 'Mediana',
+                    'l3c1' : 'Alta',
+                    'l4c1' : 'Muito alta',
+                    'l5c1' : 'Muito baixa',
                 },
             },   
             'tit2' : { 
                 'Variações de Componentes' : {
-                    'l1c2' : {'Alta'},
-                    'l2c2' : {'Mediana'},
-                    'l3c2' : {'Alta'},
-                    'l4c2' : {'Muito alta'},
-                    'l5c2' : {'Muito baixa'},
+                    'l1c2' : 'Alta',
+                    'l2c2' : 'Mediana',
+                    'l3c2' : 'Alta',
+                    'l4c2' : 'Muito alta',
+                    'l5c2' : 'Muito baixa',
                 },
             },
             'tit3' : { 
                 'N/A' : {
-                    'l1c3' : {''},
-                    'l2c3' : {''},
-                    'l3c3' : {''},
-                    'l4c3' : {''},
-                    'l5c3' : {''},
-                }
-            },  
+                    'l1c3' : '',
+                    'l2c3' : '',
+                    'l3c3' : '',
+                    'l4c3' : '',
+                    'l5c3' : '',
+                },
+            },
+            'subitle' : '',   
         },
         'Consolidação' : {
             'tit1':{ 
                 'Contribuidores':{
-                    'l1c1' : {'1000'},
-                    'l2c1' : {'253'},
-                    'l3c1' : {'985'},
-                    'l4c1' : {'190'},
-                    'l5c1' : {'57'},
+                    'l1c1' : '1000',
+                    'l2c1' : '253',
+                    'l3c1' : '985',
+                    'l4c1' : '190',
+                    'l5c1' : '57',
                 },
             },  
             'tit2':{ 
                 'Versão':{
-                    'l1c2' : {'4.3.1'},
-                    'l2c2' : {'1.0.0'},
-                    'l3c2' : {'6.5.3'},
-                    'l4c2' : {'2.4.1'},
-                    'l5c2' : {'1.0.1'},
+                    'l1c2' : '4.3.1',
+                    'l2c2' : '1.0.0',
+                    'l3c2' : '6.5.3',
+                    'l4c2' : '2.4.1',
+                    'l5c2' : '1.0.1',
                 },
             },  
             'tit3':{ 
                 'Lançamento':{
-                    'l1c3' : {'2011'},
-                    'l2c3' : {'2018'},
-                    'l3c3' : {'2011'},
-                    'l4c3' : {'2013'},
-                    'l5c3' : {'2013'},
+                    'l1c3' : '2011',
+                    'l2c3' : '2018',
+                    'l3c3' : '2011',
+                    'l4c3' : '2013',
+                    'l5c3' : '2013',
                 },
-            },  
+            },
+            'subitle' : '',   
         },
         'Comunidade' : {
             'tit1':{ 
                 'Atividade':{
-                    'l1c1' : {'Muito ativa'},
-                    'l2c1' : {'Ativa'},
-                    'l3c1' : {'Muito ativa'},
-                    'l4c1' : {'Inativa'},
-                    'l5c1' : {'Pouco ativa'},
+                    'l1c1' : 'Muito ativa',
+                    'l2c1' : 'Ativa',
+                    'l3c1' : 'Muito ativa',
+                    'l4c1' : 'Inativa',
+                    'l5c1' : 'Pouco ativa',
                 },
             },  
             'tit2':{ 
                 'Atualizações':{
-                    'l1c2' : {'18759'},
-                    'l2c2' : {'3866'},
-                    'l3c2' : {'16324'},
-                    'l4c2' : {'6684'},
-                    'l5c2' : {'560'},
+                    'l1c2' : '18759',
+                    'l2c2' : '3866',
+                    'l3c2' : '16324',
+                    'l4c2' : '6684',
+                    'l5c2' : '560',
                 },
             },  
             'tit3':{ 
                 'Atualizações por Mês':{
-                    'l1c3' : {'40'},
-                    'l2c3' : {'2'},
-                    'l3c3' : {'5'},
-                    'l4c3' : {'0'},
-                    'l5c3' : {'2'},
+                    'l1c3' : '40',
+                    'l2c3' : '2',
+                    'l3c3' : '5',
+                    'l4c3' : '0',
+                    'l5c3' : '2',
                 },
-            },  
+            },
+            'subitle' : '',   
         },
         'Simplicidade' : {
             'tit1' : {
                 'Comandos' : {
-                    'l1c1' : {'Excelente'},
-                    'l2c1' : {'Boa'},
-                    'l3c1' : {'Mediana'},
-                    'l4c1' : {'Baixa'},
-                    'l5c1' : {'Baixa'},
+                    'l1c1' : 'Excelente',
+                    'l2c1' : 'Boa',
+                    'l3c1' : 'Mediana',
+                    'l4c1' : 'Baixa',
+                    'l5c1' : 'Baixa',
                 },
             },
             'tit2' : {
                 'Componentes' : {
-                    'l1c2' : {'Mediana'},
-                    'l2c2' : {'Mediana'},
-                    'l3c2' : {'Mediana'},
-                    'l4c2' : {'Mediana'},
-                    'l5c2' : {'Excelente'},
+                    'l1c2' : 'Mediana',
+                    'l2c2' : 'Mediana',
+                    'l3c2' : 'Mediana',
+                    'l4c2' : 'Mediana',
+                    'l5c2' : 'Excelente',
                 },
             },
             'tit3':{ 
                 'N/A':{
-                    'l1c3' : {''},
-                    'l2c3' : {''},
-                    'l3c3' : {''},
-                    'l4c3' : {''},
-                    'l5c3' : {''},
+                    'l1c3' : '',
+                    'l2c3' : '',
+                    'l3c3' : '',
+                    'l4c3' : '',
+                    'l5c3' : '',
                 },
-            },  
+            }, 
+            'subitle' : '', 
         },
-    },
+    };
 
     const details = {
         'fama':{
@@ -162,21 +167,21 @@ $(function() {
             'foundation_t' : 'Foundation é um framework bem documentado que é construído em SASS o que permite a contrução de aplicações rapidamente, possui maior flexibilidade com todas as classes possuindo um estilo alternativo, utiliza REMs ao invés de pixel eleiminando a necessidade explícita de definir altura e largura para cada dispositivo etc. Porém ele é bastante complexo para iniciantes e possui um arquivo relativamente muito grande tendo vários recursos que normalmente não são utilizados.',   
             'semanticui_t' : 'Semantic UI se destaca utilizando Jquery e LESS(pré-processador de CSS) produzindo resultados mais bonitos nas aplicações, possui uma excelente documentação, grande liberdade de customização,Carrega somente os componentes que se necesita na aplicação minimizando o tamanho do arquivo e consequentemente o tempo de carregamento da página entre outros. Por outro lado ele é bastante complexo para inciantes e não sofre mais manutenção.',
             'purecss_t' : 'Pure CSS é um framework extremamente leve permitindo tempos de carregamentos reápidos até mesmo para microprocessadores, possui matrizes flexíveis de módulos CSS. Só que o mesmo contitui-se apenas de CSS não incluindo Jquery ou plug-ins do Java Script.',              
-        }
+        },
     };
 
     const type = {
         'style' : {
             'btn-opcoes' : 'btn btn-outline-dark col-sm-4 btn-opcoes mb-2',
             'btn-hc' : 'btn btn-outline-dark col-xs-1 btn-hc',
-            'btn-table' : 'tn btn-outline-dark col-sm-4 btn-table  mb-2',
-            'z' : 'thead-dark'
+            'btn-table' : 'btn btn-outline-dark col-sm-5 btn-table mb-2',
+            'z' : 'z thead-dark',
         },
         'stylehc' :{
             'btn-opcoes' : 'btn btn-outline-light col-sm-4 btn-opcoes mb-2',
-            'btn-hc' : 'btn btn-outline-light col-xs-1 btn-hc'
-            'btn-table' : 'tn btn-outline-light col-sm-4 btn-table  mb-2',
-            'z' : 'thead-light'
+            'btn-hc' : 'btn btn-outline-light col-xs-1 btn-hc',
+            'btn-table' : 'btn btn-outline-light col-sm-5 btn-table mb-2',
+            'z' : 'z thead-light',
         },
     };
 
@@ -232,12 +237,12 @@ $(function() {
         }
     };
     function changeTableTexts(table){
-        $('.top').html(table);
-        $.each(info[table] function(i,elem){
+        $('#top').html(table);
+        $.each(info[table],function(i,elem){
             let id = '#'+i;
-            $.each(elem function(i,elem){
+            $.each(elem,function(i,elem){
                 $(id).html(i);
-                $.each(elem function(i,elem){
+                $.each(elem,function(i,elem){
                     let idc = '#'+i;
                     $(idc).html(elem);
                 })    

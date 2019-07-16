@@ -1,6 +1,6 @@
 * {box-sizing:border-box}
 
-html,.all{
+html,.all,td,th{
     background-color: black;
     color: white;
 }
