@@ -140,11 +140,11 @@ $(function() {
             },  
             'tit3':{
                 '' : {
-                    'l1c4' : '',
-                    'l2c4' : '',
-                    'l3c4' : '',
-                    'l4c4' : '',
-                    'l5c4' : '',
+                    'l1c3' : '',
+                    'l2c3' : '',
+                    'l3c3' : '',
+                    'l4c3' : '',
+                    'l5c3' : '',
                 },
             },
             'tit4': {
@@ -169,12 +169,12 @@ $(function() {
                 },
             },
             'tit2' : {
-                'Componentes' : {
-                    'l1c2' : 'Mediana',
-                    'l2c2' : 'Mediana',
-                    'l3c2' : 'Mediana',
-                    'l4c2' : 'Mediana',
-                    'l5c2' : 'Excelente',
+                '':{
+                    'l1c2' : '',
+                    'l2c2' : '',
+                    'l3c2' : '',
+                    'l4c2' : '',
+                    'l5c2' : '',
                 },
             },
             'tit3':{ 
@@ -195,7 +195,7 @@ $(function() {
                     'l5c4' : '',
                 },
             },
-            'subtitle' : { '*Simplicidade de comandos significa é classificada na quantidade de palavras usada para definir-lo e se essas palavras fazem sentido ao que o comando realiza, ex.: No Bootstrap o comando "row" que em português fica "linha" cria uma área que ocupará um espaço de uma linha.'   : {'a' : ''},},
+            'subtitle' : { '*Simplicidade de comandos é classificada na quantidade de palavras usada para definir-lo e se essas palavras fazem sentido ao que o comando realiza, ex.: No Bootstrap o comando "row" que em português fica "linha" cria uma área que ocupará um espaço de uma linha. Portanto esse comando é um comando simples.'   : {'a' : ''},},
         },
     };
 
