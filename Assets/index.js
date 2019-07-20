@@ -21,7 +21,7 @@ $(function() {
                 },
             },                                                                                                  
             'tit3': {
-                'N/A' : {
+                '' : {
                     'l1c3' : '',
                     'l2c3' : '',
                     'l3c3' : '',
@@ -30,7 +30,7 @@ $(function() {
                 },
             },
             'tit4': {
-                'N/A' : {
+                '' : {
                     'l1c4' : '',
                     'l2c4' : '',
                     'l3c4' : '',
@@ -38,7 +38,7 @@ $(function() {
                     'l5c4' : '',
                 },
             },
-            'subtitle' : { '-Legenda: Objetos são classificados de acordo com o Peso total do arquivo de framework e peu espaço ocupado no disco. Quanto menor for o mesmo mais rápido será para o navegador carregar o sistema.' : {'a' : ''},},
+            'subtitle' : { '*Objetos são classificados de acordo com o Peso total do arquivo de framework e seu espaço ocupado no disco. Quanto menor for o mesmo mais rápido será para o navegador carregar o site.' : {'a' : ''},},
         },
         'Componentes' : {
             'tit1' : {
@@ -51,7 +51,7 @@ $(function() {
                 },
             },   
             'tit2' : { 
-                'Variações de Componentes' : {
+                'Variações' : {
                     'l1c2' : 'Alta',
                     'l2c2' : 'Mediana',
                     'l3c2' : 'Alta',
@@ -60,7 +60,7 @@ $(function() {
                 },
             },
             'tit3' : { 
-                'N/A' : {
+                '' : {
                     'l1c3' : '',
                     'l2c3' : '',
                     'l3c3' : '',
@@ -69,7 +69,7 @@ $(function() {
                 },
             },
             'tit4': {
-                'N/A' : {
+                '' : {
                     'l1c4' : '',
                     'l2c4' : '',
                     'l3c4' : '',
@@ -77,7 +77,7 @@ $(function() {
                     'l5c4' : '',
                 },
             },
-            'subtitle' : { '-Legenda: Componentes são os elementos que existem dentro do framework que permitem alguma alteração no sistema, eles são classificados de acordo com os valores "Muito Baixo : 29 ou -";"Baixo: 30 a 39"; "Mediano: 40 a 49"; "Alto : 50 a 59"; "Muito alto: 60 a 69"; "Excelente: 70 ou +". Variações trata-se de outras opções do mesmo comando permitindo maior liberdade do sistema, ex: no Semantic UI um botão pode possuir bordas de formatos variados e cores variadas permitindo maior liberdade para o usuário.' : {'a' : ''},},
+            'subtitle' : { '*Componentes são os elementos que existem dentro do framework que permitem alguma alteração no site. Variações trata-se de outras opções do comando permitindo maior versatilidade no site, ex.: no Semantic UI um botão pode possuir bordas de formatos variados e cores variadas. O todo é classificado de acordo com os valores.: \n-Muito Baixo.: 29 ou - ; \n-Baixo.: 30 a 39 ; \n-Mediano.: 40 a 49 ; \n-Alto.: 50 a 59 ; \n-Muito alto.: 60 a 69 ; \n-Excelente.: 70 ou + .' : {'a' : ''},},
         },
         'Consolidação' : {
             'tit1':{ 
@@ -89,7 +89,8 @@ $(function() {
                     'l5c1' : '57',
                 },
             },  
-            'tit2':{ 
+
+            'tit2':{
                 'Versão':{
                     'l1c2' : '4.3.1',
                     'l2c2' : '1.0.0',
@@ -97,8 +98,8 @@ $(function() {
                     'l4c2' : '2.4.1',
                     'l5c2' : '1.0.1',
                 },
-            },  
-            'tit3':{ 
+            },
+            'tit3':{
                 'Lançamento':{
                     'l1c3' : '2011',
                     'l2c3' : '2018',
@@ -116,7 +117,7 @@ $(function() {
                     'l5c4' : 'Não Consolidada',
                 },
             },
-            'subtitle' : { '-Legenda: Contribuidores são aqueles que contribuem com a criação de novas versões do framework seja corrigindo problemas ou adicionando novos recursos no mesmo, sua classificação é dada através da seguinte forma: Não Consolidada :  1 ou - anos no mercado,  99 ou - contribuidores,  menos de uma versão completa Consolidada:   Pelo menos 2 anos no mercado, 100 ou + contribuidores, uma versão completa Madura: Pelo menos 5 anos no mercado, 500 ou + contribuidores, pelo menos 2 versões completas' : {'a' : ''},},
+            'subtitle' : { '*Contribuidores são aqueles que contribuem com a criação de novas versões do framework seja corrigindo problemas ou adicionando novos recursos no mesmo, sua classificação é dada através da seguinte forma.: \n-Não Consolidada.: 1 ou - anos no mercado,  99 ou - contribuidores, nenhuma versão completa; \n-Consolidada.: Pelo menos 2 anos no mercado, 100 ou + contribuidores, uma versão completa; \n-Madura.: Pelo menos 5 anos no mercado, 500 ou + contribuidores, pelo menos 2 versões completas.' : {'a' : ''},},
         },
         'Comunidade' : {
             'tit1':{ 
@@ -137,17 +138,8 @@ $(function() {
                     'l5c2' : '560',
                 },
             },  
-            'tit3':{ 
-                'Atualizações por Mês':{
-                    'l1c3' : '40',
-                    'l2c3' : '2',
-                    'l3c3' : '5',
-                    'l4c3' : '0',
-                    'l5c3' : '2',
-                },
-            },
-            'tit4': {
-                'N/A' : {
+            'tit3':{
+                '' : {
                     'l1c4' : '',
                     'l2c4' : '',
                     'l3c4' : '',
@@ -155,7 +147,16 @@ $(function() {
                     'l5c4' : '',
                 },
             },
-            'subtitle' : { '-Legenda: Atualizações se trata de quantas novas versões do framework são criadas, elas podem variar de acordo com o tempo que estão no mercado e a ativade da sua comunidade' : {'a' : ''},},  
+            'tit4': {
+                '' : {
+                    'l1c4' : '',
+                    'l2c4' : '',
+                    'l3c4' : '',
+                    'l4c4' : '',
+                    'l5c4' : '',
+                },
+            },
+            'subtitle' : { '*Atualizações se trata de quantas novas versões do framework são criadas, elas podem variar de acordo com o tempo que estão no mercado e a ativade da sua comunidade.' : {'a' : ''},},
         },
         'Simplicidade' : {
             'tit1' : {
@@ -177,7 +178,7 @@ $(function() {
                 },
             },
             'tit3':{ 
-                'N/A':{
+                '':{
                     'l1c3' : '',
                     'l2c3' : '',
                     'l3c3' : '',
@@ -186,7 +187,7 @@ $(function() {
                 },
             },
             'tit4':{
-                'N/A':{
+                '':{
                     'l1c4' : '',
                     'l2c4' : '',
                     'l3c4' : '',
@@ -194,7 +195,7 @@ $(function() {
                     'l5c4' : '',
                 },
             },
-            'subtitle' : { '-Legenda: Simplicidade de comandos significa se eles usam poucas palavras e se destacam por serem intutitivas as suas funções, ex: No bootstrap o comando col-sm-5 faz uma coluna que terá até o tamanho de tela qualificado como "small" terá tamanho 5'   : {'a' : ''},},
+            'subtitle' : { '*Simplicidade de comandos significa é classificada na quantidade de palavras usada para definir-lo e se essas palavras fazem sentido ao que o comando realiza, ex.: No Bootstrap o comando "row" que em português fica "linha" cria uma área que ocupará um espaço de uma linha.'   : {'a' : ''},},
         },
     };
 
@@ -281,12 +282,22 @@ $(function() {
             },          
         }
     };
+    function lineJumper(a){
+        a = a.split('\n');
+        let b = '';
+        $.each(a,function(i,e){
+            b += "<p>"+e+"</p>";
+        });
+        return b;
+    }
+
     function changeTableTexts(table){
         $('#top').html(table);
         $.each(info[table],function(i,elem){
             let id = '#'+i;
             $.each(elem,function(i,elem){
-                $(id).html(i);
+                if(id == "#subtitle"){$(id).html(lineJumper(i));}
+                else $(id).html(i);
                 $.each(elem,function(i,elem){
                     let idc = '#'+i;
                     $(idc).html(elem);
@@ -358,7 +369,7 @@ $(function() {
                 $(c).removeClass($(c).attr('class')).addClass(elem); 
             })
         }
-    };
+    }
     let $titles = $('.ar');
     let $botoes = $('.btn-opcoes');
     let $table = $('.btn-table');
@@ -386,7 +397,7 @@ $(function() {
     $table.click(function(){
         let table = $(this).data('table');
         changeTableTexts(table);
-    })
+    });
     $hc.click(function(){
         let style = $(this).data('style');
         let stylehc = $(this).data('stylehc');
