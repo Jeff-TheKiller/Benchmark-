@@ -1,5 +1,31 @@
 
 $(function() {
+    const buttons{
+        'table':{
+            'tablemore' : {
+                'tableimage' :{'src':'./Assets/Images/circleplus.svg'},
+                'tabletext' :{'text':'Mostrar tabela'},
+                'tablebutton':{'data-style':'tableless'},
+            },
+            'tableless' : {
+                'tableimage' :{'src':'./Assets/Images/circleless.svg'},
+                'tabletext' :{'text':'Esconder tabela'},
+                'tablebutton':{'data-style':'tablemore'},
+            },
+        },
+        'graphics':{
+            'graphicsmore' : {
+                'graphicsimage' :{'src':'./Assets/Images/circleplus.svg'},
+                'graphicstext' :{'text':'Mostrar tabela'},
+                'graphicsbutton':{'data-style':'tableless'},
+            },
+            'graphicsless' : {
+                'graphicsimage' :{'src':'./Assets/Images/circleless.svg'},
+                'graphicstext' :{'text':'Esconder tabela'},
+                'graphicsbutton':{'data-style':'tablemore'},
+            },
+        },
+    }
     const info = {
         'Peso' : {
             'tit1' : {
@@ -291,6 +317,22 @@ $(function() {
         return b;
     }
 
+    function showhideTables(table.data){
+        $.each(buttons[table],function(i,elem){
+            let a = '.'+i;
+            if(a.is(':visible'))a.hide();
+            else a.show();
+            $.each(elem[data], function (i, elem){
+                let id = '#'+i;
+                $.each(elem, function (i, elem){
+                    id = $(id).attr(i);
+                    id = elem;
+                })
+            })
+        })
+
+    }
+
     function changeTableTexts(table){
         $('#top').html(table);
         $.each(info[table],function(i,elem){
@@ -374,8 +416,10 @@ $(function() {
     let $botoes = $('.btn-opcoes');
     let $table = $('.btn-table');
     let $hc = $('.btn-hc');
+    let $options = $('.btn-data');
     let t = null;
     let n = 0;
+    $options.hide();
     $botoes.click(function(){    
         n = 0;
         t = null;
@@ -403,4 +447,9 @@ $(function() {
         let stylehc = $(this).data('stylehc');
         changeSiteColors(style,stylehc);
     });
+    $options.click(function(){
+        let style = $(this).data('style');
+        let table = $(this).data('table');
+        showhideTables(table,style);
+    })
 });
