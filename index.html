@@ -22,7 +22,11 @@
             <div class="col-xs-1"></div>
             <button class="btn btn-outline-dark col-xs-1 btn-hc" data-css="style" data-css2="stylehc">Alto Contraste</button>
         </div>
-        <div class="graphics">
+        <button id="graphicsbutton" class="row btn btn-outline-dark btnsh" data-table="graphics" data-style="graphicsless">
+            <img id="graphicsimage" src="./Assets/Images/circleplus.svg">
+             <a data-text="Mostrar gráfico" id="graphicstext">Mostrar gráfico</a>
+        </button>
+        <div class="showhide">
         <div class="row mb-4">
             <h3 class="col-sm-3">Bootstrap</h3>  
             <div class="col-sm-1"> </div>                      
@@ -120,10 +124,11 @@
               <div class="col-sm-1 mb-2"></div>
         </div>
         </div>
-          <button id="tablebutton" class="row btn btn-outline-dark btn-data" data-table="table" data-style="tableless">
+          <button id="tablebutton" class="row btn btn-outline-dark btnsh" data-table="table" data-style="tableless">
               <img id="tableimage" src="./Assets/Images/circleplus.svg">
-              <a id="tabletext">Tabela</a>
+              <a id="tabletext" data-text="Mostrar tabela">Mostrar tabela</a>
           </button>
+        <div class="showhide">
         <div class="table-responsive-sm mt-1">
           <table class="table">
             <thead class="z thead-dark">
@@ -188,7 +193,8 @@
           <div class="row">
              <button class="btn btn-outline-dark col-sm-5 btn-table mb-2" data-table="Simplicidade"><h4>SIMPLICIDADE</h4></button>
           </div>
-      </div>       
+      </div>
+      </div>
       </div>  
     </body>
 </html>

@@ -1,28 +1,32 @@
 
 $(function() {
-    const buttons{
+    const buttons = {
         'table':{
-            'tablemore' : {
-                'tableimage' :{'src':'./Assets/Images/circleplus.svg'},
-                'tabletext' :{'text':'Mostrar tabela'},
-                'tablebutton':{'data-style':'tableless'},
-            },
-            'tableless' : {
-                'tableimage' :{'src':'./Assets/Images/circleless.svg'},
-                'tabletext' :{'text':'Esconder tabela'},
-                'tablebutton':{'data-style':'tablemore'},
+            '' : {
+                'tablemore' : {
+                    'tableimage' :{'src':'./Assets/Images/circleplus.svg'},
+                    'tabletext' :{'data-text':'Mostrar tabela'},
+                    'tablebutton':{'data-style':'tableless'},
+                },
+                'tableless': {
+                    'tableimage': {'src': './Assets/Images/circleless.svg'},
+                    'tabletext': {'data-text': 'Esconder tabela'},
+                    'tablebutton': {'data-style': 'tablemore'},
+                },
             },
         },
         'graphics':{
-            'graphicsmore' : {
-                'graphicsimage' :{'src':'./Assets/Images/circleplus.svg'},
-                'graphicstext' :{'text':'Mostrar tabela'},
-                'graphicsbutton':{'data-style':'tableless'},
-            },
-            'graphicsless' : {
-                'graphicsimage' :{'src':'./Assets/Images/circleless.svg'},
-                'graphicstext' :{'text':'Esconder tabela'},
-                'graphicsbutton':{'data-style':'tablemore'},
+            '' : {
+                'graphicsmore' : {
+                    'graphicsimage': {'src': './Assets/Images/circleplus.svg'},
+                    'graphicstext': {'data-text': 'Mostrar gráfico'},
+                    'graphicsbutton': {'data-style': 'graphicsless'},
+                },
+                'graphicsless': {
+                    'graphicsimage': {'src': './Assets/Images/circleless.svg'},
+                    'graphicstext': {'data-text': 'Esconder gráfico'},
+                    'graphicsbutton': {'data-style': 'graphicsmore'},
+                },
             },
         },
     }
@@ -248,12 +252,14 @@ $(function() {
             'btn-hc' : 'btn btn-outline-dark col-xs-1 btn-hc',
             'btn-table' : 'btn btn-outline-dark col-sm-5 btn-table mb-2',
             'z' : 'z thead-dark',
+            'btnsh' : 'row btn btn-outline-dark btnsh',
         },
         'stylehc' :{
             'btn-opcoes' : 'btn btn-outline-light col-sm-4 btn-opcoes mb-2',
             'btn-hc' : 'btn btn-outline-light col-xs-1 btn-hc',
             'btn-table' : 'btn btn-outline-light col-sm-5 btn-table mb-2',
             'z' : 'z thead-light',
+            'btnsh' : 'row btn btn-outline-light btnsh'
         },
     };
 
@@ -317,20 +323,19 @@ $(function() {
         return b;
     }
 
-    function showhideTables(table.data){
+    function showhideTables(table,data){
         $.each(buttons[table],function(i,elem){
-            let a = '.'+i;
-            if(a.is(':visible'))a.hide();
-            else a.show();
             $.each(elem[data], function (i, elem){
                 let id = '#'+i;
                 $.each(elem, function (i, elem){
-                    id = $(id).attr(i);
-                    id = elem;
+                    $(id).attr(i,elem);
+                    if(i == "data-text"){
+                        $(id).html(elem);
+                        return elem;
+                    }
                 })
             })
         })
-
     }
 
     function changeTableTexts(table){
@@ -416,10 +421,10 @@ $(function() {
     let $botoes = $('.btn-opcoes');
     let $table = $('.btn-table');
     let $hc = $('.btn-hc');
-    let $options = $('.btn-data');
+    let $options = $('.btnsh');
     let t = null;
     let n = 0;
-    $options.hide();
+    $('.showhide').hide();
     $botoes.click(function(){    
         n = 0;
         t = null;
