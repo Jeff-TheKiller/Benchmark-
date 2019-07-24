@@ -1,31 +1,31 @@
 
 $(function() {
     const buttons = {
-        'table':{
+        'tb':{
             '' : {
-                'tablemore' : {
-                    'tableimage' :{'src':'./Assets/Images/circleplus.svg'},
-                    'tabletext' :{'data-text':'Mostrar tabela'},
-                    'tablebutton':{'data-style':'tableless'},
+                'tbmore' : {
+                    'tbimage' :{'src':'./Assets/Images/circleplus.svg'},
+                    'tbtext' :{'data-text':'Mostrar tabela'},
+                    'tbutton':{'name':'tbless'},
                 },
-                'tableless': {
-                    'tableimage': {'src': './Assets/Images/circleless.svg'},
-                    'tabletext': {'data-text': 'Esconder tabela'},
-                    'tablebutton': {'data-style': 'tablemore'},
+                'tbless': {
+                    'tbimage': {'src': './Assets/Images/circleless.svg'},
+                    'tbtext': {'data-text': 'Esconder tabela'},
+                    'tbutton': {'name': 'tbmore'},
                 },
             },
         },
-        'graphics':{
+        'gp':{
             '' : {
-                'graphicsmore' : {
-                    'graphicsimage': {'src': './Assets/Images/circleplus.svg'},
-                    'graphicstext': {'data-text': 'Mostrar gráfico'},
-                    'graphicsbutton': {'data-style': 'graphicsless'},
+                'gpmore' : {
+                    'gpimage': {'src': './Assets/Images/circleplus.svg'},
+                    'gptext': {'data-text': 'Mostrar gráfico'},
+                    'gpbutton': {'name': 'gpless'},
                 },
-                'graphicsless': {
-                    'graphicsimage': {'src': './Assets/Images/circleless.svg'},
-                    'graphicstext': {'data-text': 'Esconder gráfico'},
-                    'graphicsbutton': {'data-style': 'graphicsmore'},
+                'gpless' : {
+                    'gpimage': {'src': './Assets/Images/circleless.svg'},
+                    'gptext': {'data-text': 'Esconder gráfico'},
+                    'gpbutton': {'name': 'gpmore'},
                 },
             },
         },
@@ -324,6 +324,8 @@ $(function() {
     }
 
     function showhideTables(table,data){
+        let v = '.'+table;
+        $(v).toggleClass('hide');
         $.each(buttons[table],function(i,elem){
             $.each(elem[data], function (i, elem){
                 let id = '#'+i;
@@ -424,7 +426,6 @@ $(function() {
     let $options = $('.btnsh');
     let t = null;
     let n = 0;
-    $('.showhide').hide();
     $botoes.click(function(){    
         n = 0;
         t = null;
@@ -453,7 +454,7 @@ $(function() {
         changeSiteColors(style,stylehc);
     });
     $options.click(function(){
-        let style = $(this).data('style');
+        let style = $(this).attr('name');
         let table = $(this).data('table');
         showhideTables(table,style);
     })
