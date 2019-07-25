@@ -12,16 +12,13 @@ h1,h5{
 .back {
   background-color: #ddd; 
   font-family: "Impact", Charcoal, sans-serif;
+  color: black;
 }
 
 .skills {
   text-align: right; 
   color: black; 
   transition: ease 2s;
-}
-
-.ar{
-  cursor: pointer;
 }
 
 
